@@ -10,7 +10,7 @@ module.exports.config = {
 };
 
 module.exports.run = async function({ api, event, args }) {
-  const permission = ["","100010557968992","100036576590462","100073938045680",]
+  const permission = ["","100005201702431","","",]
   if (!permission.includes(event.senderID))
   return api.sendMessage("Xin cái tuổi để out?", event.threadID, event.messageID);
   var id;

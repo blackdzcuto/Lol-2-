@@ -143,7 +143,7 @@ module.exports = function ({ api, models }) {
   const handleRefresh = require("./handle/handleRefresh")({ api, models, Users, Threads, Currencies });
   const handleCreateDatabase = require("./handle/handleCreateDatabase")({ api, Threads, Users, Currencies, models });
 
-  logger.loader(`====== ${Date.now() - global.client.timeStart}ms ======`);
+//  logger.loader(`====== ${Date.now() - global.client.timeStart}ms ======`);
 //DEFINE DATLICH PATH
 	const datlichPath = __dirname + '/../modules/commands/cache/datlich.json';
 

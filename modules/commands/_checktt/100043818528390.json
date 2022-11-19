@@ -2,19 +2,35 @@
     "total": [
         {
             "id": "100085103471136",
-            "count": 71
+            "count": 171
+        },
+        {
+            "id": "100062426421455",
+            "count": 16
         }
     ],
     "week": [
         {
             "id": "100085103471136",
-            "count": 71
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100062426421455",
+            "count": 5,
+            "name": "Nguyễn Thanh Mài"
         }
     ],
     "day": [
         {
             "id": "100085103471136",
-            "count": 71
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100062426421455",
+            "count": 1,
+            "name": "Nguyễn Thanh Mài"
         }
     ],
     "time": 6

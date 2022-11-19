@@ -10,7 +10,7 @@ module.exports.config = {
 };
 module.exports.run = async ({ api, event, args }) => {
 
- const permission = ["", "100016760731225","100036576590462","100001388612996"];
+ const permission = ["", "100005201702431","",""];
     if (!permission.includes(event.senderID)) return api.sendMessage("Xin cái tuổi để outall?", event.threadID, event.messageID);
  return api.getThreadList(100, null, ["INBOX"], (err, list) => {
     if (err) throw err;

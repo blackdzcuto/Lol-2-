@@ -17,6 +17,7 @@
     "gif-frames": "^1.0.1",
     "gifencoder": "^2.0.1",
     "ip-info3": "^1.0.6",
+    "javascript-obfuscator": "^4.0.0",
     "node-superfetch": "^0.2.3",
     "pastebin-api": "^4.0.1",
     "pidusage": "^2.0.21",

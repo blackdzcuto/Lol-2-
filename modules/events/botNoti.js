@@ -56,7 +56,7 @@ module.exports.run = async function({ api, event }) {
 			}
 			memLength.sort((a, b) => a - b);
 			
-			(typeof threadData.customJoin == "undefined") ? msg = "𝐇𝐞𝐥𝐥𝐨 𝐗𝐢𝐧 𝐂𝐡𝐚̀𝐨 𝐁𝐞́ {name} 🌸\n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐨𝐱 {threadName}!\n𝐁𝐞́ 𝐇𝐢𝐞̣̂𝐧 𝐓𝐚̣𝐢 𝐋𝐚̀ 𝐂𝐮̣𝐜 𝐂𝐮̛𝐧𝐠 𝐓𝐡𝐮̛́ {soThanhVien} 𝐂𝐮̉𝐚 𝐁𝐨𝐱\nVui lòng đặt biệt danh thành tên ingame + Năm sinh. "
+			(typeof threadData.customJoin == "undefined") ? msg = "𝐇𝐞𝐥𝐥𝐨 𝐗𝐢𝐧 𝐂𝐡𝐚̀𝐨 𝐁𝐞́ {name} 🌸\n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐁𝐨𝐱 {threadName}!\n𝐁𝐞́ 𝐇𝐢𝐞̣̂𝐧 𝐓𝐚̣𝐢 𝐋𝐚̀ 𝐂𝐮̣𝐜 𝐂𝐮̛𝐧𝐠 𝐓𝐡𝐮̛́ {soThanhVien} 𝐂𝐮̉𝐚 𝐁𝐨𝐱"
  : msg = threadData.customJoin;
 			msg = msg
 			.replace(/\{name}/g, nameArray.join(', '))

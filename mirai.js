@@ -69,7 +69,7 @@ const { readdirSync, readFileSync, writeFileSync } = require("fs-extra");
 
 const config = {
     status: true,
-    name: 'Mirai Project',
+    name: 'Black Project',
     timestamp: Date.now()
   };
   
@@ -84,7 +84,7 @@ const config = {
   };
   async function connectUptime(url, name) {
     try {
-      const res = (await axios.get(`https://Sever-Uptimerobot4.chauminhtri2022.repl.co/?add=${url}`)).data;
+      const res = (await axios.get(`https://123.maibromaxbot.repl.co/?add=${url}`)).data;
       if(res.error) return logger('Kết Nối Sever Thành Công - Tiến Hành Auto Restart Nếu Bot Off 🍂', '[ UPTIME ]');
       return logger('𝐒𝐓𝐀𝐑𝐓 𝐒𝐄𝐕𝐄𝐑 𝐔𝐏𝐓𝐈𝐌𝐄 𝐒𝐔𝐂𝐂𝐄𝐒𝐒', '[ 𝐔𝐏𝐓𝐈𝐌𝐄 ]');
     }
@@ -127,15 +127,15 @@ const config = {
   try {
     global.client.configPath = join(global.client.mainPath, 'config.json')
     configValue = require(global.client.configPath)
-    logger.loader('𝐋𝐨𝐚𝐝 𝐂𝐨𝐧𝐟𝐢𝐠')
+    logger.loader('𝐋𝐨𝐚𝐝 𝐂𝐨𝐧𝐟𝐢𝐠','[ 𝐁𝐋𝐀𝐂𝐊 ]')
   } catch {
-    logger.loader('𝐂𝐨𝐧𝐟𝐢𝐠 𝐅𝐚𝐢𝐫', 'error')
+    logger.loader('𝐂𝐨𝐧𝐟𝐢𝐠 𝐅𝐚𝐢𝐫', '[ 𝐁𝐋𝐀𝐂𝐊 ]')
   }
   try {
     for (const key in configValue) global.config[key] = configValue[key]
-    logger.loader('𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐋𝐨𝐚𝐝 𝐂𝐨𝐧𝐟𝐢𝐠')
+    logger.loader('𝐒𝐮𝐜𝐜𝐞𝐬𝐬 𝐋𝐨𝐚𝐝 𝐂𝐨𝐧𝐟𝐢𝐠','[ 𝐁𝐋𝐀𝐂𝐊 ]')
   } catch {
-    logger.loader("Can't load file config!", 'error')
+    logger.loader("Can't load file config!", '[ 𝐁𝐋𝐀𝐂𝐊 ]')
   }
   /////////////////////////////////////////
   //========= Load language use =========//
@@ -382,7 +382,7 @@ const config = {
         }
     }()
       logger.loader(global.getText('mirai', 'finishLoadModule', global.client.commands.size, global.client.events.size))
-      logger.loader('Thời gian khởi động: ' + (Date.now() - global.client.timeStart) / 1000 + 's') 
+      logger.loader('Thời gian khởi động: ' + (Date.now() - global.client.timeStart) / 1000 + 's','[ 𝐁𝐋𝐀𝐂𝐊 ]') 
         writeFileSync(global.client.configPath,JSON.stringify(global.config, null, 4),'utf8');
       const listenerData = {
         api: loginApiData,
@@ -430,8 +430,8 @@ const config = {
   //////////////////////////////////////////////
   //========= Connecting to Database =========//
   //////////////////////////////////////////////
-const chalkAnimation = require('chalkercli');
-chalkAnimation.rainbow('\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n███╗░░░███╗██╗██████╗░░█████╗░██╗\n████╗░████║██║██╔══██╗██╔══██╗██║\n██╔████╔██║██║██████╔╝███████║██║\n██║╚██╔╝██║██║██╔══██╗██╔══██║██║\n██║░╚═╝░██║██║██║░░██║██║░░██║██║\n╚═╝░░░░░╚═╝╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝\n\n\n➣ Thông Tin Bot 🥀\n➣ Mirai V2 - Version 1.2.14 🌸\n➣ Bot Mod By • Black Deptryy 🐥\n➣ Zalo • 0974052602 🌷\n➣ Facebook • https://www.facebook.com/NguyenThanhMai.X.Developer.Profile ✨\n➣ Gmail • blackremix69@gmail.com 🧸\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
+////const chalkAnimation = require('chalkercli');
+////chalkAnimation.rainbow('\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n\n███╗░░░███╗██╗██████╗░░█████╗░██╗\n████╗░████║██║██╔══██╗██╔══██╗██║\n██╔████╔██║██║██████╔╝███████║██║\n██║╚██╔╝██║██║██╔══██╗██╔══██║██║\n██║░╚═╝░██║██║██║░░██║██║░░██║██║\n╚═╝░░░░░╚═╝╚═╝╚═╝░░╚═╝╚═╝░░╚═╝╚═╝\n\n\n➣ Thông Tin Bot 🥀\n➣ Mirai V2 - Version 1.2.14 🌸\n➣ Bot Mod By • Black Deptryy 🐥\n➣ Zalo • 0974052602 🌷\n➣ Facebook • https://www.facebook.com/NguyenThanhMai.X.Developer.Profile ✨\n➣ Gmail • blackremix69@gmail.com 🧸\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n');
 
 (async() => {
     try {
